@@ -1,0 +1,20 @@
+table {
+  padding: 5px;
+  border-width: 1px;
+  text-align: left;
+  background-color: rgb(244, 244, 249);
+  width: 100%;
+}
+th {
+  background-color: blue;
+  color: white;
+  font-size: 24px;
+}
+td {
+  margin: 5px;
+  padding: 5px;
+  border-bottom: 1px;
+}
+.container {
+  margin: 5rem;
+}
