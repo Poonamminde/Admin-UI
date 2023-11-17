@@ -3,8 +3,8 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import EditIcon from "@mui/icons-material/Edit";
 import { useState, useRef } from "react";
 
-export default function ({ item, data, setData, deleteArray }) {
-  let [up, setUpadate] = useState(false);
+export default function Index({ item, data, setData, deleteArray }) {
+  let [update, setUpadate] = useState(false);
   let [refresh, setRefresh] = useState(true);
   let object = useRef({ id: "", name: "", email: "", role: "" });
   /**
@@ -69,7 +69,7 @@ export default function ({ item, data, setData, deleteArray }) {
         checked={deleteArray.includes(item.id) ? true : false}
         onClick={() => handleOnclick(item.id)}
       />
-      {!up && (
+      {!update && (
         <>
           <td>{item.name}</td>
           <td>{item.email}</td>
@@ -80,7 +80,7 @@ export default function ({ item, data, setData, deleteArray }) {
           </td>
         </>
       )}
-      {up && (
+      {update && (
         <>
           <td>
             <input
